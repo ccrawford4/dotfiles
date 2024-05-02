@@ -1,9 +1,8 @@
 set nocompatible		" use VIM settings rather than Vi settings
 
 set hidden			" allow buffer switching with unsaved changes
-
+set mouse=a
 set number			" show current line number
-set relativenumber		" show relative line numbers
 
 syntax on			" enable syntax highlighting
 
@@ -71,24 +70,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " enhancement for termdebug
 packadd termdebug		" enable termdebug
 let g:termdebug_wide=1		" split vertically
-
-" disable arrow keys insert mode
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Up> <Nop>
-
-" disable arrow keys in normal mode
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-nnoremap <Up> <Nop>
-
-" disable arrow keys in visual mode
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Up> <Nop>
 
 " map global leader key to space
 nnoremap <SPACE> <Nop>
